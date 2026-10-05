@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-<title>CV</title>
+<title>Anthony Kosseifi - CV</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -22,6 +22,7 @@ body{
     background:#0b1220;
     color:#e5e7eb;
     overflow-x:hidden;
+    min-height:100vh;
 }
 
 /* LEFT SIDE */
@@ -217,24 +218,92 @@ body{
 
 .tag{
     font-size:13px;
-    padding:6px 10px;
+    padding:7px 12px;
     border-radius:999px;
-    background:#f3f4f6;
+    background:#f8fafc;
     color:#374151;
     border:1px solid #e5e7eb;
+    box-shadow:0 1px 2px rgba(15,23,42,0.04);
+    transition:all 0.2s ease;
 }
 
-@media (max-width: 768px) {
+.tag:hover{
+    transform:translateY(-1px);
+    border-color:#f59e0b;
+    color:#111827;
+}
+
+@media (max-width: 1024px) {
     .sv-left-side {
         position: relative;
         width: 100%;
         height: auto;
         border-right: none;
         border-bottom: 1px solid rgba(255,255,255,0.1);
+        padding: 34px 22px;
     }
+
     .sv-right-side {
         margin-left: 0;
-        padding: 40px 20px;
+        padding: 40px 22px;
+    }
+}
+
+@media (max-width: 640px) {
+    .sv-profile h1 {
+        font-size: clamp(26px, 7vw, 36px);
+    }
+
+    .sv-profile p,
+    .contact,
+    .hobbies,
+    .lang-top,
+    .text,
+    .meta,
+    .card ul {
+        font-size: 13px;
+    }
+
+    .sv-title {
+        letter-spacing: 2px;
+        font-size: 10px;
+    }
+
+    .section {
+        margin-bottom: 38px;
+    }
+
+    .section h2 {
+        font-size: 11px;
+        letter-spacing: 3px;
+    }
+
+    .card {
+        padding: 18px 16px;
+        border-radius: 12px;
+    }
+
+    .card h3 {
+        font-size: 16px;
+    }
+
+    .two-col {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .col {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .tags {
+        gap: 8px;
+    }
+
+    .tag {
+        font-size: 12px;
+        padding: 6px 10px;
     }
 }
 
@@ -298,7 +367,9 @@ body{
     <div class="section">
         <h2>Profile</h2>
         <div class="text">
-            Computer Science student at Lebanese American University with a strong focus on practical learning and real-world problem solving. Interested in understanding how systems work beyond theory, especially through debugging, experimentation, and hands-on development. My main focus is improving my programming foundation while developing a deeper understanding of software systems, APIs, and low-level computing concepts.
+            Computer Science student at Lebanese American University with a strong focus on practical learning and real-world problem solving.
+            Interested in understanding how systems work beyond theory, especially through debugging, experimentating.
+            My main focus is improving my programming skills while developing a deeper understanding of software systems, APIs, and low-level computing concepts.
             I also gained early real-world experience through customer-facing work, which helped me develop responsibility, communication skills, and the ability to perform under pressure.
         </div>
     </div>
@@ -339,15 +410,30 @@ body{
 
         <div class="card">
             <h3>Food Cart Operator – Timy’s Food</h3>
-            <div class="meta">Aamchit Beach • 2022 – 2025</div>
+            <div class="meta">Aamchit Beach • 2022 – 2026 (+festivals)</div>
 
             <ul>
                 <li>Managed full operations in fast-paced seasonal environment</li>
+                <li>Prepared and cooked menu items maintaining quality and speed standards</li>
                 <li>Handled customer service and conflict situations</li>
                 <li>Cash handling and financial tracking</li>
                 <li>Decision making during rush hours and shortages</li>
                 <li>Opening and closing responsibilities</li>
                 <li>Trained new helpers during peak periods</li>
+            </ul>
+
+        </div>
+
+        <div class="card">
+            <h3>Food Waiter – BiteBliss</h3>
+            <div class="meta">Aamchit • Summer 2026</div>
+
+            <ul>
+                <li>Took customer orders accurately and provided attentive service</li>
+                <li>Delivered food and beverages promptly to tables</li>
+                <li>Cleaned and maintained dining and service areas to ensure a pleasant guest experience</li>
+                <li>Answered phone calls to handle inquiries, reservations, and customer requests</li>
+                <li>Collaborated with team members to ensure smooth daily operations during peak hours</li>
             </ul>
         </div>
 
@@ -360,7 +446,7 @@ body{
         <h3>Haraket Rasoulia Mariamiyya (MAM) – Church Community</h3>
         <div class="meta">2018 – 2026</div>
         <div class="text">
-            Active member in a church-based youth community focused on faith development, group discussions, and volunteer participation in organized events.
+            Was active member in a church-based youth community focused on faith development, group discussions, and volunteer participation in organized events.
         </div>
 
         <ul>
@@ -371,13 +457,10 @@ body{
             <li>Developed teamwork, discipline, and communication through long-term participation</li>
         </ul>
     </div>
-
-
 </div>
 
-    <!-- TECHNICAL EXPERIENCE (ADDED) -->
     <div class="section">
-        <h2>Technical Experience</h2>
+        <h2>Technical Skills</h2>
 
         <div class="two-col">
 
@@ -389,26 +472,27 @@ body{
                     <div class="tag">JavaScript</div>
                     <div class="tag">Java</div>
                     <div class="tag">Python</div>
+                    <div class="tag">SQL</div>
                     <div class="tag">MIPS Assembly</div>
                     <div class="tag">Bitmap Programming</div>
                 </div>
             </div>
 
             <div class="col">
-                <h4>Workflow</h4>
+                <h4>Tools & Workflow</h4>
                 <div class="tags">
                     <div class="tag">VS Code</div>
                     <div class="tag">GitHub</div>
                     <div class="tag">API Testing</div>
                     <div class="tag">Debugging</div>
                     <div class="tag">Problem Solving</div>
+                    <div class="tag">Systems Thinking</div>
                 </div>
             </div>
 
         </div>
     </div>
 
-    <!-- SKILLS (ADDED) -->
     <div class="section">
         <h2>Skills & Mindset</h2>
 
@@ -419,20 +503,22 @@ body{
                 <div class="tags">
                     <div class="tag">Customer Service</div>
                     <div class="tag">Cash Handling</div>
-                    <div class="tag">Team Work</div>
+                    <div class="tag">Teamwork</div>
                     <div class="tag">Time Management</div>
                     <div class="tag">Responsibility</div>
+                    <div class="tag">Communication</div>
                 </div>
             </div>
 
             <div class="col">
                 <h4>Thinking Style</h4>
                 <div class="tags">
-                    <div class="tag">Problem Solving</div>
                     <div class="tag">Logical Thinking</div>
+                    <div class="tag">Problem Solving</div>
                     <div class="tag">Hands-on Learning</div>
                     <div class="tag">Systems Understanding</div>
-                    <div class="tag">Fast Adaptation</div>
+                    <div class="tag">Adaptability</div>
+                    <div class="tag">Fast Learning</div>
                 </div>
             </div>
 
