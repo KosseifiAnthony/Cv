@@ -164,9 +164,13 @@ body{
     text-transform:uppercase;
 }
 
-.cv-footer span{
+.cv-footer-updated span{
     color:#111827;
     font-weight:700;
+}
+
+.cv-footer-name::before{
+    content:" • ";
 }
 
 /* SECTION */
@@ -394,6 +398,15 @@ body{
     .tag {
         font-size: 12px;
         padding: 6px 10px;
+    }
+
+    .cv-footer-updated,
+    .cv-footer-name {
+        display:block;
+    }
+
+    .cv-footer-name::before {
+        content:"";
     }
 }
 
@@ -662,7 +675,7 @@ body{
         </div>
     </div>
 
-    <div class="cv-footer">Last updated: <span>October 2026</span> • Anthony Kosseifi • CV</div>
+    <div class="cv-footer"><span class="cv-footer-updated">Last updated: <span>October 2026</span></span><span class="cv-footer-name">Anthony Kosseifi • CV</span></div>
 
 </div>
 
